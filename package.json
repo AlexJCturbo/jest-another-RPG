@@ -1,0 +1,22 @@
+{
+  "name": "jest-another-rpg",
+  "version": "1.0.0",
+  "description": "A command-line role-playing game (RPG) in which a user battles against a series of enemies",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexJCturbo/jest-another-RPG.git"
+  },
+  "author": "AlexJCturbo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexJCturbo/jest-another-RPG/issues"
+  },
+  "homepage": "https://github.com/AlexJCturbo/jest-another-RPG#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  }
+}
