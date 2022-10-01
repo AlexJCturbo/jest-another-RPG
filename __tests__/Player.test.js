@@ -42,6 +42,7 @@ test("gets player's stats as an object", () => {
   expect(player.getStats()).toHaveProperty('agility');
 });
 
+//Inventory Test
 test('gets inventory from player or returns false', () => {
   const player = new Player('Dave');
 
@@ -51,6 +52,7 @@ test('gets inventory from player or returns false', () => {
   expect(player.getInventory()).toEqual(false);
 });
 
+//Health Tests
 test("gets player's health value", () => {
   const player = new Player('Dave');
 
@@ -87,3 +89,31 @@ isolation.
 The moral of the story is that it's important to create a new instance of the
 object we're testing in every test to give that test a fresh start.
 */
+
+//Attack Test
+test("gets player's attack value", () => {
+  const player = new Player('Dave');
+  player.strength = 10;
+
+  expect(player.getAttackValue()).toBeGreaterThanOrEqual(5);
+  expect(player.getAttackValue()).toBeLessThanOrEqual(15);
+});
+
+//Adding potions test
+test('adds a potion to the inventory', () => {
+  const player = new Player('Dave');
+  const oldCount = player.inventory.length;
+
+  player.addPotion(new Potion());
+  expect(player.inventory.length).toBeGreaterThan(oldCount);
+});
+
+//Testing if the correct potion is removed from inventory
+test('uses a potion from inventory', () => {
+  const player = new Player('Dave');
+  player.inventory = [new Potion(), new Potion(), new Potion()];
+  const oldCount = player.inventory.length;
+
+  player.usePotion(1);
+  expect(player.inventory.length).toBeLessThan(oldCount);
+});
