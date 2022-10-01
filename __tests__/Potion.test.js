@@ -9,6 +9,7 @@ test('creates a random potion object', () => {
 });
 
 /*
+Parts of a test
 describe(name, fn)
 it(name, fn, timeout) or test(name, fn, timeout)
 expect()
