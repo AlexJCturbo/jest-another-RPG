@@ -1,4 +1,6 @@
 # jest-another-RPG
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 ## Table of Contents
 - [Project Description](#Project-Description)
 
@@ -14,6 +16,7 @@
 
 - [References](#References)
 
+- [License](#License)
 
 ## Project Description
 A command-line role-playing game (RPG) in which a user battles against a series of enemies whose health and stats can be sustained by a potion. The project is created using JavaScript ES6, Node.js and the npm packages Inquirer and Jest.
@@ -37,7 +40,7 @@ Feel free to contribute with this repository and/or get in touch with me to comm
 
 ## Test Instructions
 Install the dependencies on your computer: Node.js, npm inquirer and Jest. Add a .gitignore file and include node_modules/ and .DS_Store/.
-From the terminal, form the directory ./__tests__ run the test by typing npm run test. This will test the different JavaScript Constructors. Then, execute the program from the terminal by typing “node app.js” from the main directory of the ´rpject. The program must then run.
+From the terminal, form the directory ./__tests__ run the test by typing npm run test. This will test the different JavaScript Constructors. Then, execute the program from the terminal by typing “node app.js” from the main directory of the project. The program must then run.
 ###### [Back to Index](#Table-of-Contents)
 
 
@@ -51,4 +54,15 @@ From the terminal, form the directory ./__tests__ run the test by typing npm run
 - [Node.js](https://nodejs.org/en/)
 - [Jest](https://jestjs.io/docs/getting-started)
 - [npm inquirer](https://www.npmjs.com/package/inquirer)
+###### [Back to Index](#Table-of-Contents)
+
+
+## License
+ISC
+Copyright 2022 by Alejandro Jaimes
+	
+
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 ###### [Back to Index](#Table-of-Contents)
