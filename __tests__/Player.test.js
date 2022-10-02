@@ -16,23 +16,6 @@ test('creates a player object', () => {
 
 console.log(new Potion());
 
-/*
-When you run npm run test, it will run all files within the __tests__
-directory and any other .test files throughout the project. If you only
-want to run a particular group of related tests (known as a test suite),
-you can modify the npm run command as shown here:
-  npm run test Player
-  npm run test Potion
-*/
-
-/*
-An example of mocking fs (file system module) might look like this:
-
-const fs = require('fs');
-jest.mock('fs');
-fs.readFileSync.mockReturnValue('fake content');
-*/
-
 test("gets player's stats as an object", () => {
   const player = new Player('Dave');
 
@@ -78,17 +61,6 @@ test("subtracts from player's health", () => {
   player.reduceHealth(99999);
   expect(player.health).toBe(0);
 });
-
-/*
-we create a new Player instance in every test. We could choose to use the same
-one in all of our tests, but this might lead to unintended consequences. Now
-that our tests affect the Player object's property values, if we used the same
-object every time, we would no longer be testing properties and methods in
-isolation.
-
-The moral of the story is that it's important to create a new instance of the
-object we're testing in every test to give that test a fresh start.
-*/
 
 //Attack Test
 test("gets player's attack value", () => {

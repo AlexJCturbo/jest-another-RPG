@@ -7,10 +7,3 @@ test('creates a random potion object', () => {
   expect(potion.name.length).toBeGreaterThan(0);
   expect(potion.value).toEqual(expect.any(Number));
 });
-
-/*
-Parts of a test
-describe(name, fn)
-it(name, fn, timeout) or test(name, fn, timeout)
-expect()
-*/
